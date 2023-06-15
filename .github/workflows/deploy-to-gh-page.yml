@@ -39,13 +39,11 @@ jobs:
         run: |
           yarn install
           yarn run build
-          touch dist/.nojekyll
-          cp dist/index.html dist/404.html
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist # The folder the action should deploy.
+          folder: docs/.vitepress/dist # The folder the action should deploy.
           # token: ${{ secrets.ACCESS_TOKEN }}
           branch: gh-pages
           # force: false
