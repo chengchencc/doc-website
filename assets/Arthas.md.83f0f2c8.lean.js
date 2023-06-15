@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as a}from"./chunks/framework.95b9d657.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Arthas.md","filePath":"Arthas.md"}'),r={name:"Arthas.md"};function s(o,c,n,p,_,d){return e(),a("div")}const f=t(r,[["render",s]]);export{m as __pageData,f as default};
