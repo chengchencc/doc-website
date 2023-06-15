@@ -40,10 +40,15 @@ jobs:
           yarn install
           yarn run build
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: docs/.vitepress/dist # The folder the action should deploy.
-          token: ${{ secrets.ACCESS_TOKEN }}
-          branch: gh-pages
-          # force: false
+      - name: Deploy
+        shell: bash
+        run: |
+          sh deploy.sh
+
+      # - name: Deploy 🚀
+      #   uses: JamesIves/github-pages-deploy-action@v4
+      #   with:
+      #     folder: docs/.vitepress/dist # The folder the action should deploy.
+      #     token: ${{ secrets.ACCESS_TOKEN }}
+      #     branch: gh-pages
+      #     # force: false
